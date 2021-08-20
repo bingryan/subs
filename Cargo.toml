@@ -1,0 +1,30 @@
+[package]
+name = "subs"
+version = "0.1.0"
+authors = ["bingryan <bingryan@outlook.com>"]
+edition = "2018"
+license = "Apache-2.0"
+description = "substrate developer command line tools"
+readme = "README.md"
+repository = "https://github.com/bingryan/subs"
+homepage = "https://github.com/bingryan/subs"
+keywords = ["cli", "substrate", "command"]
+categories = ["command-line-utilities"]
+exclude = [
+    "docs/*",
+]
+
+include = [
+    "templates/*",
+]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+path = "src/main.rs"
+name = "subs"
+
+
+[dependencies]
+include_dir = "0.6.1"
+# https://github.com/nickel-org/rust-mustache
+mustache = "0.9.0"
