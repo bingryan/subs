@@ -28,3 +28,5 @@ name = "subs"
 include_dir = "0.6.1"
 # https://github.com/nickel-org/rust-mustache
 mustache = "0.9.0"
+
+clap = "2.33.3"
