@@ -16,6 +16,8 @@ pub fn build_cli() -> App<'static, 'static> {
                 .help("Path to a config file other than config.toml in the root of user")
         )
         .subcommands(vec![
+            SubCommand::with_name("init")
+                .about("Init subs command line config"),
             SubCommand::with_name("new")
                 .about("Create a new pallet")
                 .args(&[
