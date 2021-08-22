@@ -25,13 +25,14 @@ name = "subs"
 
 
 [dependencies]
+# template
 include_dir = "0.6.1"
-# https://github.com/nickel-org/rust-mustache
 mustache = "0.9.0"
 
 # console process
 console = "0.14"
 indicatif = "0.16"
+dialoguer = "0.8.0"
 
 clap = "2.33.3"
 anyhow = "1.0.43"

@@ -21,13 +21,12 @@ pub fn build_cli() -> App<'static, 'static> {
             SubCommand::with_name("new")
                 .about("Create a new pallet")
                 .args(&[
-                    Arg::with_name("pallet")
-                        .short("p")
-                        .long("pallet")
-                        .default_value("node")
-                        .possible_values(&["node", "para"])
+                    Arg::with_name("dir")
+                        .short("d")
+                        .long("dir")
+                        .default_value("pallet")
                         .required(true)
-                        .help("Create a pallet, use node-template(node) or parachain-template(para) as a template"),
+                        .help("Create a pallet in this directory"),
                 ]),
         ])
 }
