@@ -28,6 +28,7 @@ name = "subs"
 # template
 include_dir = "0.6.1"
 mustache = "0.9.0"
+walkdir = "2.3.2"
 
 # console process
 console = "0.14"
@@ -48,3 +49,7 @@ chrono = "0.4.19"
 # Serialize, Deserialize
 serde = "1.0.128"
 serde_derive = "1.0.128"
+
+# git
+git2 = "0.13"
+
