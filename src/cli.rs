@@ -21,7 +21,7 @@ pub fn build_cli() -> App<'static, 'static> {
 				.args(&[Arg::with_name("dir")
 					.short("d")
 					.long("dir")
-					.default_value("pallet")
+					.default_value("pallets")
 					.required(true)
 					.help("Create a pallet in this directory")]),
 		])

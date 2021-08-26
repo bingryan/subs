@@ -9,7 +9,7 @@ use std::{env, fs};
 use walkdir::WalkDir;
 
 pub fn new_pallet(directory: &str, settings: SubsConfig, input_option: NewInputOptions) -> Result<()> {
-	let target_pallet_path = env::current_dir()?.join(directory);
+	let target_pallet_path = env::current_dir()?.join(directory).join(&input_option.name);
 	let template_path = root_path()?.join(settings.system.templates);
 	if input_option.is_parachain() {
 		copy_than_render(
